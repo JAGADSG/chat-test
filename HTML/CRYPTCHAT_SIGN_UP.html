@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>S'enregistrer</title>
+        <link rel="stylesheet" href="E:\projet\CSS\CRYPTCHAT_SIGN_UP.css">
+
+    </head>
+
+    <body>
+
+        <!-- En-tête de la page -->
+		<header class="header">
+			<h1>CRYPTCHAT</h1>
+		</header>
+		
+		<!-- Le navbar -->
+		<ul class="topnav">
+			<li><a href="D:\projet\HTML\CRYPTCHAT_HOME.html">Home</a></li>
+			<li class="right"><a href="D:\projet\HTML\CRYPTCHAT_SIGN_IN.html">Sign In</a></li>
+			<li class="right"><a class="active" href="D:/projet/HTML/CRYPTCHAT_SIGN_UP.html">Sign Up</a></li>
+		</ul>
+
+        <h3>Création de votre compte CRYPCHAT</h3>
+        
+        <form action="/signup" method="POST">
+        {% csrf_token %}
+            <label for="">Nom utilisateur</label> 
+            <input type="text" id="username" name="username" placeholder="Ajoutez votre nom d'utilisateur" required>
+            <br>
+            <label for="">Prénom</label> 
+            <input type="text" id="Name" name="Name" placeholder=" Ajoutez votre prénom" required>
+            <br>
+            <label for="">Nom</label> 
+            <input type="text" id="Last_Name" name="Last_Name" placeholder=" Ajoutez votre nom" required>
+             <br>
+            <label for="">Email</label> 
+            <input type="email" id="Email" name="Email" placeholder=" Ajoutez votre email" required>
+            <br>
+            <label for="">Mot de passe</label> 
+            <input type="password" id="password" name="password" placeholder=" Ajoutez votre mot de passe" required>
+            <br>
+            <label for="">Confirmez votre mot de passe</label> 
+            <input type="password" id="c_password" name="c_password" placeholder="Confirmez votre mot de passe" required>
+            <br>
+            <button type="button" class="cancelbtn">Cancel</button>
+            <button type="submit">S'enregistrer  </button>
+        </form>
+
+
+        <script src="" async defer></script>  
+
+    </body>
+
+</html>
